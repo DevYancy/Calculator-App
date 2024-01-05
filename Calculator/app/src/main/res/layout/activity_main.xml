@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bgColor"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/input"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:autoSizeTextType="uniform"
+        android:textAlignment="textEnd"
+        android:paddingTop="60dp"
+        android:background="#00000000"
+        android:textColor="@color/white"
+        />
+
+    <TextView
+        android:id="@+id/total"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:autoSizeTextType="uniform"
+        android:background="#00000000"
+        android:textAlignment="textEnd"
+        android:textColor="@color/white"
+        />
+<!--    firs line -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+
+        <Button
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:elevation="8dp"
+            android:background="@drawable/shadowbutton"
+            android:text="AC"
+            android:textColor="@color/textColor"
+            android:textSize="24dp"
+            android:onClick="click_AC"
+            />
+
+        <Button
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:elevation="8dp"
+            android:background="@drawable/shadowbutton"
+           android:drawableLeft="@drawable/delete"
+            android:textColor="@color/textColor"
+            android:textSize="24dp"
+            android:layout_marginLeft="10dp"
+            android:onClick="delete"
+            />
+        <Button
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:elevation="8dp"
+            android:background="@drawable/shadowbutton"
+            android:text="%"
+            android:textColor="@color/textColor"
+            android:textSize="24dp"
+            android:layout_marginLeft="10dp"
+            android:onClick="moduleDiv"
+            />
+
+        <Button
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:elevation="8dp"
+            android:background="@drawable/shadowbutton"
+            android:text="/"
+            android:textColor="@color/textColor"
+            android:textSize="24dp"
+            android:layout_marginLeft="10dp"
+            android:onClick="divide"
+            />
+
+    </LinearLayout>
+
+<!-- 2nd line -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+
+        <Button
+            android:id="@+id/button_seven"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:elevation="8dp"
+            android:background="@drawable/shadowbutton"
+            android:text="7"
+            android:textColor="@color/textColor"
+            android:textSize="24dp"
+            android:onClick="seven"
+            />
+
+        <Button
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:elevation="8dp"
+            android:background="@drawable/shadowbutton"
+            android:text="8"
+            android:textColor="@color/textColor"
+            android:textSize="24dp"
+            android:layout_marginLeft="10dp"
+            android:onClick="eight"
+            />
+        <Button
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:elevation="8dp"
+            android:background="@drawable/shadowbutton"
+            android:text="9"
+            android:textColor="@color/textColor"
+            android:textSize="24dp"
+            android:layout_marginLeft="10dp"
+            android:onClick="nine"
+            />
+
+        <Button
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:elevation="8dp"
+            android:background="@drawable/shadowbutton"
+            android:text="x"
+            android:textColor="@color/textColor"
+            android:textSize="24dp"
+            android:layout_marginLeft="10dp"
+            android:onClick="multiplication"
+            />
+
+    </LinearLayout>
+
+<!-- 3rd line -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+
+        <Button
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:elevation="8dp"
+            android:background="@drawable/shadowbutton"
+            android:text="4"
+            android:textColor="@color/textColor"
+            android:textSize="24dp"
+            android:onClick="four"
+            />
+
+        <Button
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:elevation="8dp"
+            android:background="@drawable/shadowbutton"
+            android:text="5"
+            android:textColor="@color/textColor"
+            android:textSize="24dp"
+            android:layout_marginLeft="10dp"
+            android:onClick="five"
+            />
+        <Button
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:elevation="8dp"
+            android:background="@drawable/shadowbutton"
+            android:text="6"
+            android:textColor="@color/textColor"
+            android:textSize="24dp"
+            android:layout_marginLeft="10dp"
+            android:onClick="six"
+            />
+
+        <Button
+            android:id="@+id/button_subtraction"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:elevation="8dp"
+            android:background="@drawable/shadowbutton"
+            android:text="-"
+            android:textColor="@color/textColor"
+            android:textSize="24dp"
+            android:layout_marginLeft="10dp"
+            android:onClick="subtraction"
+            />
+
+    </LinearLayout>
+
+<!--    4th line-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+
+        <Button
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:elevation="8dp"
+            android:background="@drawable/shadowbutton"
+            android:text="1"
+            android:textColor="@color/textColor"
+            android:textSize="24dp"
+            android:onClick="one"
+            />
+
+        <Button
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:elevation="8dp"
+            android:background="@drawable/shadowbutton"
+            android:text="2"
+            android:textColor="@color/textColor"
+            android:textSize="24dp"
+            android:layout_marginLeft="10dp"
+            android:onClick="two"
+            />
+        <Button
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:elevation="8dp"
+            android:background="@drawable/shadowbutton"
+            android:text="3"
+            android:textColor="@color/textColor"
+            android:textSize="24dp"
+            android:layout_marginLeft="10dp"
+            android:onClick="three"
+            />
+
+        <Button
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:elevation="8dp"
+            android:background="@drawable/shadowbutton"
+            android:text="+"
+            android:textColor="@color/textColor"
+            android:textSize="24dp"
+            android:layout_marginLeft="10dp"
+            android:onClick="addition"
+            />
+
+    </LinearLayout>
+
+<!--    5th line -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+
+        <Button
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:elevation="8dp"
+            android:background="@drawable/shadowbutton"
+            android:text="0"
+            android:textColor="@color/textColor"
+            android:textSize="24dp"
+            android:onClick="zero"
+            />
+
+        <Button
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:elevation="8dp"
+            android:background="@drawable/shadowbutton"
+            android:text="."
+            android:textColor="@color/textColor"
+            android:textSize="24dp"
+            android:layout_marginLeft="10dp"
+            android:onClick="point"
+            />
+        <Button
+            android:layout_width="178dp"
+            android:layout_height="85dp"
+            android:elevation="8dp"
+            android:background="@drawable/equalbutton"
+            android:text="="
+            android:textColor="@color/white"
+            android:textSize="24dp"
+            android:layout_marginLeft="10dp"
+            android:onClick="equal"
+            />
+
+
+
+    </LinearLayout>
+</LinearLayout>
